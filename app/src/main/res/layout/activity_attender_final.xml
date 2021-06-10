@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Attender_final">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:text="Have Received FUND form Institution ?"
+                android:textSize="17sp" />
+
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="364dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rg5r1"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:checked="true"
+                    android:onClick="onClick"
+                    android:text="NO" />
+
+                <RadioButton
+                    android:id="@+id/rg5r2"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:onClick="onClick"
+                    android:text="YES" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/q6"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="20dp"
+                android:text=""
+                android:hint="Enter The Amount "
+                android:background="@drawable/edit_text_border"
+                android:gravity="center"
+                android:textSize="17sp" />
+
+
+            <EditText
+                android:id="@+id/objective"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_border"
+                android:hint="Objective :"
+                android:textSize="17sp"
+                android:padding="10dp"
+                android:gravity="left"
+                android:layout_margin="20dp"
+                />
+
+            <EditText
+                android:id="@+id/outcome"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_border"
+                android:ems="5"
+                android:gravity="left"
+                android:padding="10dp"
+                android:hint="  Outcome :"
+                android:inputType="textPersonName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="17sp" />
+
+
+
+
+            <Button
+                android:id="@+id/attender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Submit"></Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
